@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-  width: 936px;
+  width: 940px;
   margin: 0 auto;
 }
 
@@ -98,4 +98,28 @@ h1, h2, h3, h4, h5, h6 {
 
 .header-nav-list__item a:hover .icon-login path {
   opacity: 1;
+}
+
+/* Main section */
+
+main {
+  background-color: #070707;
+  background-image: url(../img/main_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  border: 1px solid transparent;
+
+  /* TODO: Delete this later */
+  min-height: 1716px;
+}
+
+/* Logo section */
+
+.logo__image {
+  display: block;
+
+  /* TODO: Change top and bottom margins */
+  margin: 80px auto;
 }
