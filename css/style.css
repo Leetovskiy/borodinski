@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 
 } */
 
-.header-nav-list {
+.nav-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -37,11 +37,11 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-.header-nav-list__item {
+.nav-list__item {
   position: relative;
 }
 
-.header-nav-list__item--current {
+.nav-list__item--current {
   cursor: default;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
           user-select: none;
 }
 
-.header-nav-list__item--current::after {
+.nav-list__item--current::after {
   content: "";
   display: block;
   width: 56px;
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: -28px;
 }
 
-.header-nav-list__item-link {
+.nav-list__item-link {
   font-family: inherit;
   font-size: 16px;
   font-weight: inherit;
@@ -74,15 +74,15 @@ h1, h2, h3, h4, h5, h6 {
   padding: 26px 20px;
 }
 
-.header-nav-list__item a:hover {
+.nav-list__item a:hover {
   background-color: #242424;
 }
 
-.header-nav-list__item-login {
+.nav-list__item-login {
   margin-left: auto;
 }
 
-.header-nav-list__item-login a {
+.nav-list__item-login a {
   padding-left: 50px;
 }
 
@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.3;
 }
 
-.header-nav-list__item a:hover .icon-login path {
+.nav-list__item a:hover .icon-login path {
   opacity: 1;
 }
 
