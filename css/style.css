@@ -7,6 +7,9 @@ html, body {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
+
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,6 +19,45 @@ h1, h2, h3, h4, h5, h6 {
 .container {
   width: 940px;
   margin: 0 auto;
+}
+
+.wrapper {
+  min-height: 420px;
+  background-color: #f9f6f3;
+  background-image: url(../img/wrapper_rule.png), url(../img/wrapper_bg.jpg);
+  background-position: center, left;
+  background-repeat: no-repeat, repeat;
+  border: solid 1px transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper-first {
+  margin-top: 64px;
+}
+
+/* Button */
+
+.button {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  display: block;
+  width: 140px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  border: none;
+  text-transform: uppercase;
+}
+
+.button:hover,
+.button:active {
+  background-color: #663d15;
 }
 
 /* Ally hiding class */
@@ -93,7 +135,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 26px 20px;
 }
 
-.nav-list__item a:hover {
+.nav-list__item a:hover,
+.nav-list__item a:active {
   background-color: #242424;
 }
 
@@ -202,4 +245,93 @@ main {
   font-size: inherit;
   line-height: 24px;
   margin-top: 28px;
+}
+
+/* News section */
+
+.news {
+  width: 350px;
+  margin-top: 45px;
+  margin-left: 80px;
+}
+
+.news__header {
+  font-family: inherit;
+  font-size: 30px;
+  color: #000;
+}
+
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 23px;
+}
+
+/* .news-list__item {
+
+} */
+
+.news-list__item + .news-list__item {
+  margin-top: 23px;
+}
+
+.news-list__item-text {
+  font-family: inherit;
+
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+
+  margin: 0;
+}
+
+.news-list__item-date {
+  font-family: inherit;
+  text-transform: lowercase;
+  margin-top: 4px;
+}
+
+.news__button {
+  margin-top: 30px;
+}
+
+/* Gallery section */
+
+.gallery {
+  width: 300px;
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: 80px;
+}
+
+.gallery__header {
+  font-family: inherit;
+  font-size: 30px;
+  color: #000;
+}
+
+.gallery__photo {
+  background-color: #e5e5e5;
+  width: 300px;
+  height: 178px;
+  margin-top: 24px;
+}
+
+.photo__image {
+  border: 7px solid #fff;
+}
+
+.gallery__button-wrapper {
+  margin-top: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* .gallery__button {
+
+} */
+
+.gallery__button + .gallery__button {
+  margin-left: auto;
 }
