@@ -37,6 +37,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 64px;
 }
 
+.wrapper-second {
+  margin-top: 36px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 43px 80px 50px 80px;
+  min-height: 435px;;
+}
+
 /* Button */
 
 .button {
@@ -58,6 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 .button:hover,
 .button:active {
   background-color: #663d15;
+  cursor: pointer;
 }
 
 /* Ally hiding class */
@@ -334,4 +343,43 @@ main {
 
 .gallery__button + .gallery__button {
   margin-left: auto;
+}
+
+
+/* Contacts */
+
+/* .contacts {
+
+} */
+
+.contacts__header {
+  font-family: inherit;
+  font-size: 30px;
+  color: #000;
+}
+
+.contacts__text {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 24px;
+  color: #000;
+
+  margin-top: 21px;
+  margin-bottom: 21px;
+}
+
+.contacts__button-wrapper {
+  margin-top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* .contacts__button {
+
+} */
+
+.contacts__button + .contacts__button {
+  margin-left: 20px;
 }
