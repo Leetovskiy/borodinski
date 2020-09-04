@@ -43,6 +43,12 @@ h1, h2, h3, h4, h5, h6 {
   box-sizing: border-box;
   padding: 43px 80px 50px 80px;
   min-height: 435px;;
+  margin-bottom: 65px;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Button */
@@ -181,9 +187,6 @@ main {
   background-position: center;
 
   border: 1px solid transparent;
-
-  /* TODO: Delete this later */
-  min-height: 1716px;
 }
 
 /* Logo section */
@@ -348,9 +351,9 @@ main {
 
 /* Contacts */
 
-/* .contacts {
-
-} */
+.contacts {
+  max-width: 324px;
+}
 
 .contacts__header {
   font-family: inherit;
@@ -382,4 +385,69 @@ main {
 
 .contacts__button + .contacts__button {
   margin-left: 20px;
+}
+
+/* Feedback */
+
+.feedback {
+  width: 300px;
+}
+
+.feedback__header {
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+}
+
+.feedback__text {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000;
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+.feedback-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feedback-form__label {
+
+}
+
+.feedback-form__lable-text {
+  margin-left: 16px;
+  margin-bottom: 10px;
+}
+
+.feedback-form__input {
+  background-color: #f9f6f3;
+  border: 2px solid #000101;
+  padding: 11px;
+  width: 116px;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  color: #4a4949;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.feedback-form__button {
+  width: 300px;
+  margin-top: 8px;
 }
