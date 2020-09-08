@@ -218,6 +218,20 @@ h1, h2, h3, h4, h5, h6 {
   flex-grow: 1;
 }
 
+.nav-list__item-logo {
+  width: 110px;
+
+  position: relative;
+}
+
+.nav-list__item-logo img {
+  position: absolute;
+  left: 50%;
+  margin-left: -55px;
+  top: 50%;
+  margin-top: -12px;
+}
+
 .nav-list__item a:hover,
 .nav-list__item a:active {
   background-color: #242424;
