@@ -9,6 +9,11 @@ html, body {
   text-transform: uppercase;
 }
 
+a {
+  text-decoration: underline;
+  color: #
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
@@ -132,10 +137,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .button:hover,
-.button:active {
+.button:active,
+.button:focus {
   color: #fff;
   background-color: #663d15;
   cursor: pointer;
+  outline: none;
 }
 
 /* Ally hiding class */
@@ -667,6 +674,11 @@ main {
   margin-bottom: 10px;
 }
 
+.feedback-form__input:focus {
+  border-color: #663d15;
+  outline: none;
+}
+
 .feedback-form__button {
   width: 300px;
   margin-top: 8px;
@@ -957,9 +969,9 @@ main {
   display: block;
   width: 20px;
   height: 20px;
-  background-color: #fff;
   box-sizing: border-box;
-  border: 2px solid #000;
+  background-color: #f9f6f3;
+  border: 2px solid #000101;
 
   position: absolute;
   bottom: 50%;
@@ -968,12 +980,28 @@ main {
 }
 
 .producers__input:checked::before {
-  background: url(../img/svg/cross.svg) no-repeat center, #fff;
+  background: url(../img/svg/cross.svg) no-repeat center, #f9f6f3;
 }
 
-.producers__input:focus,
-.producers__input:checked:focus {
+.producers__input:hover,
+.producers__input:focus {
   outline: none;
+}
+.producers__input:hover + .producers__item-text {
+  color: #663d15;
+}
+
+.producers__input:focus + .producers__item-text {
+  outline: 2px dotted #000101;
+}
+
+.producers__input:disabled,
+.producers__input:disabled + .producers__item-text {
+  opacity: 0.3;
+}
+
+.producers__input:disabled:hover + .producers__item-text {
+  color: #000000;
 }
 
 .group__input {
@@ -989,9 +1017,9 @@ main {
   display: block;
   width: 20px;
   height: 20px;
-  background-color: #fff;
   box-sizing: border-box;
-  border: 2px solid #000;
+  background-color: #f9f6f3;
+  border: 2px solid #000101;
   border-radius: 50%;
 
   position: absolute;
@@ -1001,12 +1029,28 @@ main {
 }
 
 .group__input:checked::before {
-  background: url(../img/svg/circle.svg) no-repeat center, #fff;
+  background: url(../img/svg/circle.svg) no-repeat center, #f9f6f3;
 }
 
-.group__input:focus,
-.group__input:checked:focus {
+.group__input:focus {
   outline: none;
+}
+
+.group__input:hover + .group__item-text {
+  color: #663d15;
+}
+
+.group__input:focus + .group__item-text {
+  outline: 2px dotted #000101;
+}
+
+.group__input:disabled,
+.group__input:disabled + .group__item-text {
+  opacity: 0.3;
+}
+
+.group__input:disabled:hover + .group__item-text {
+  color: #000000;
 }
 
 .producers__item-text,
