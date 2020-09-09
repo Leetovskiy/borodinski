@@ -113,8 +113,8 @@
           <img src="img/gallery_photo.jpg" alt="" class="photo__image">
         </div>
         <div class="gallery__button-wrapper">
-          <button class="gallery__button button">Назад</button>
-          <button class="gallery__button button">Вперед</button>
+          <button type="button" class="gallery__button button">Назад</button>
+          <button type="button" class="gallery__button button">Вперед</button>
         </div>
       </section>
     </div>
@@ -133,7 +133,7 @@
           Сб—вс: с 10:00 до 19:00 <br>
         </p>
         <div class="contacts__button-wrapper">
-          <button class="contacts__button button">Как проехать</button>
+          <button type="button" class="contacts__button button">Как проехать</button>
           <a href="#" class="contacts__button button">Обратная связь</a>
         </div>
       </section>
@@ -213,6 +213,35 @@
       </div>
     </div>
   </footer>
+
+  <section class="login">
+    <h2 class="login__heading">Личный кабинет</h2>
+    <p class="login__text">
+      Введите пожалуйста свой логин и пароль
+    </p>
+    <form action="" class="login-form">
+      <label>
+        <span class="visually-hidden">Логин:</span>
+        <input type="text" class="login-form__input-text login-form__input-login" placeholder="Логин">
+      </label>
+      <br>
+      <label>
+        <span class="visually-hidden">Пароль:</span>
+        <input type="password" class="login-form__input-text login-form__input-pass" placeholder="Пароль">
+      </label>
+      <br>
+      <div class="login-form__wrapper">
+        <label>
+          <input type="checkbox" class="login-form__input-check">
+          <span class="login-form__input-check-text">Запомните меня</span>
+        </label>
+        <a href="" class="login-form__link">Я забыл пароль!</a>
+      </div>
+      <button class="login-form__button button">Войти</button>
+      <button type="button" class="modal-close" aria-label="Закрыть модальное окно"></button>
+
+    </form>
+  </section>
 
 </body>
 </html>
