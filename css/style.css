@@ -1321,3 +1321,20 @@ main {
   margin-top: 18px;
   width: 100%;
 }
+
+/* Modal map styles */
+
+.modal-map {
+  width: 780px;
+  height: 574px;
+  background-color: #fff;
+  box-shadow: 0px 30px 50px 0px rgba(0,0,0,0.75);
+  box-sizing: border-box;
+  padding: 7px;
+
+  position: fixed;
+  top: calc(50% - 574px / 2);
+  right: calc(50% - 780px / 2);
+
+  display: none;
+}
