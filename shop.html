@@ -48,8 +48,203 @@
     </div>
   </header>
 
-  <main>
+  <main class="page-main">
+    <div class="container">
 
+      <header class="page-header">
+        <h1 class="page__heading">Средства для ухода</h1>
+
+        <nav class="page-nav">
+          <ul class="page-navlist">
+            <li class="page-navlist__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="page-navlist__item">
+              <a href="shop.html">Магазин</a>
+            </li>
+            <li class="page-navlist__item">
+              <a>Средства для ухода</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="shop-main">
+        <form class="shop-filters">
+            <h2 class="visually-hidden">Фильтры:</h2>
+
+            <fieldset class="filters-producers">
+              <legend class="producers-legend">Производители:</legend>
+
+              <label class="producers__item">
+                <input type="checkbox" class="producers__input" name="prod_boc" checked>
+                <span class="producers__item-text">Baxter of California</span>
+              </label>
+              <label class="producers__item">
+                <input type="checkbox" class="producers__input" name="prod_natty">
+                <span class="producers__item-text">Mr Natty</span>
+              </label>
+              <label class="producers__item">
+                <input type="checkbox" class="producers__input" name="prod_suav" checked>
+                <span class="producers__item-text">Suavecito</span>
+              </label>
+              <label class="producers__item">
+                <input type="checkbox" class="producers__input" name="prod_mg">
+                <span class="producers__item-text">Malin+Goetz</span>
+              </label>
+              <label class="producers__item">
+                <input type="checkbox" class="producers__input" name="prod_murray">
+                <span class="producers__item-text">Murray’s</span>
+              </label>
+              <label class="producers__item">
+                <input type="checkbox" class="producers__input" name="prod_ac" checked>
+                <span class="producers__item-text">American Crew</span>
+              </label>
+            </fieldset>
+
+            <fieldset class="filters-group">
+              <legend class="group-legend">Группы товаров:</legend>
+
+              <label class="group__item">
+                <input type="radio" class="group__input" name="group">
+                <span class="group__item-text">Бритвенные принадлежности</span>
+              </label>
+              <label class="group__item">
+                <input type="radio" class="group__input" name="group" checked>
+                <span class="group__item-text">Средства для ухода</span>
+              </label>
+              <label class="group__item">
+                <input type="radio" class="group__input" name="group">
+                <span class="group__item-text">Аксессуары</span>
+              </label>
+            </fieldset>
+
+            <button type="submit" class="shop-filters__button button">Показать</button>
+        </form>
+
+        <div class="products-wrapper">
+          <div class="products__card">
+            <div class="card__photo">
+              <a href="item.html">
+                <img src="img/cards/boc_pack.jpg" alt="Фотография товара">
+              </a>
+            </div>
+            <p class="card__name">
+              <a href="">
+                Набор для путешествий <br>
+                <span class="uppercase">«Baxter of California»</span>
+              </a>
+            </p>
+            <div class="card__wrapper">
+              <div class="card__price">2 900 ₽</div>
+              <button class="card__button button">Купить</button>
+            </div>
+          </div>
+
+          <div class="products__card">
+            <div class="card__photo">
+              <a href="">
+                <img src="img/cards/boc_condi.jpg" alt="Фотография товара">
+              </a>
+            </div>
+            <p class="card__name">
+              <a href="">
+                Увлажняющий кондиционер <br>
+                <span class="uppercase">«Baxter of California»</span>
+              </a>
+            </p>
+            <div class="card__wrapper">
+              <div class="card__price">750 ₽</div>
+              <button class="card__button button">Купить</button>
+            </div>
+          </div>
+
+          <div class="products__card">
+            <div class="card__photo">
+              <a href="">
+                <img src="img/cards/suave.jpg" alt="Фотография товара">
+              </a>
+            </div>
+            <p class="card__name">
+              <a href="">
+                Гель для волос <br>
+                <span class="uppercase">«SUAVECITO»</span>
+              </a>
+            </p>
+            <div class="card__wrapper">
+              <div class="card__price">290 ₽</div>
+              <button class="card__button button">Купить</button>
+            </div>
+          </div>
+
+          <div class="products__card">
+            <div class="card__photo">
+              <a href="">
+                <img src="img/cards/ac_gli.jpg" alt="Фотография товара">
+              </a>
+            </div>
+            <p class="card__name">
+              <a href="">
+                Глина для укладки волос <br>
+                <span class="uppercase">«American crew»</span>
+              </a>
+            </p>
+            <div class="card__wrapper">
+              <div class="card__price">500 ₽</div>
+              <button class="card__button button">Купить</button>
+            </div>
+          </div>
+
+          <div class="products__card">
+            <div class="card__photo">
+              <a href="">
+                <img src="img/cards/ac_gel.jpg" alt="Фотография товара">
+              </a>
+            </div>
+            <p class="card__name">
+              <a href="">
+                Гель для волос <br>
+                <span class="uppercase">«AMERICAN CREW»</span>
+              </a>
+            </p>
+            <div class="card__wrapper">
+              <div class="card__price">300 ₽</div>
+              <button class="card__button button">Купить</button>
+            </div>
+          </div>
+
+          <div class="products__card">
+            <div class="card__photo">
+              <a href="">
+                <img src="img/cards/boc_pack2.jpg" alt="Фотография товара">
+              </a>
+            </div>
+            <p class="card__name">
+              <a href="">
+                Набор для бритья <br>
+                <span class="uppercase">«Baxter of California»</span>
+              </a>
+            </p>
+            <div class="card__wrapper">
+              <div class="card__price">3 900 ₽</div>
+              <button class="card__button button">Купить</button>
+            </div>
+          </div>
+
+          <button class="products__page-button button">1</button>
+          <button class="products__page-button products__page-button--current button">2</button>
+          <button class="products__page-button button">3</button>
+          <button class="products__page-button button">4</button>
+          
+        </div>
+
+
+
+
+
+      </main>
+
+    </div>
   </main>
 
   <footer class="footer">
