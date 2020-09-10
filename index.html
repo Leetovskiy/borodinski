@@ -133,7 +133,7 @@
           Сб—вс: с 10:00 до 19:00 <br>
         </p>
         <div class="contacts__button-wrapper">
-          <button type="button" class="contacts__button button">Как проехать</button>
+          <button type="button" class="contacts__button map-button button">Как проехать</button>
           <a href="#" class="contacts__button button">Обратная связь</a>
         </div>
       </section>
@@ -214,39 +214,42 @@
     </div>
   </footer>
 
+  <div class="backing"></div>
+
   <section class="login">
     <h2 class="login__heading">Личный кабинет</h2>
     <p class="login__text">
-      Введите пожалуйста свой логин и пароль
+    Введите пожалуйста свой логин и пароль
     </p>
     <form action="" class="login-form">
-      <label>
-        <span class="visually-hidden">Логин:</span>
-        <input type="text" class="login-form__input-text login-form__input-login" placeholder="Логин">
-      </label>
-      <br>
-      <label>
-        <span class="visually-hidden">Пароль:</span>
-        <input type="password" class="login-form__input-text login-form__input-pass" placeholder="Пароль">
-      </label>
-      <br>
-      <div class="login-form__wrapper">
-        <label>
-          <input type="checkbox" class="login-form__input-check">
-          <span class="login-form__input-check-text">Запомните меня</span>
-        </label>
-        <a href="" class="login-form__link">Я забыл пароль!</a>
-      </div>
-      <button class="login-form__button button">Войти</button>
-      <button type="button" class="modal-close" aria-label="Закрыть модальное окно"></button>
-
+    <label>
+    <span class="visually-hidden">Логин:</span>
+    <input type="text" class="login-form__input-text login-form__input-login" placeholder="Логин">
+    </label>
+    <br>
+    <label>
+    <span class="visually-hidden">Пароль:</span>
+    <input type="password" class="login-form__input-text login-form__input-pass" placeholder="Пароль">
+    </label>
+    <br>
+    <div class="login-form__wrapper">
+    <label>
+    <input type="checkbox" class="login-form__input-check">
+    <span class="login-form__input-check-text">Запомните меня</span>
+    </label>
+    <a href="" class="login-form__link">Я забыл пароль!</a>
+    </div>
+    <button class="login-form__button button">Войти</button>
     </form>
+    <button type="button" class="modal-close close-login" aria-label="Закрыть модальное окно"></button>
   </section>
 
-  <section class="modal-map">
-    <img src="/img/map.jpg" alt="Карта местности, Большая Конюшенная улица, дом 19" class="map__image visually-hidden">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651638!2d30.32089461615038!3d59.93879418187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1599695186464!5m2!1sru!2sru" width="766" height="560" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    <button type="button" class="modal-close" aria-label="Закрыть модальное окно"></button>
-  </section>
+    <section class="modal-map">
+      <img src="/img/map.jpg" alt="Карта местности, Большая Конюшенная улица, дом 19" class="map__image visually-hidden">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651638!2d30.32089461615038!3d59.93879418187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1599695186464!5m2!1sru!2sru" width="766" height="560" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <button type="button" class="modal-close close-map" aria-label="Закрыть модальное окно"></button>
+    </section>
+
+  <script src="js/modals.js"></script>
 </body>
 </html>
