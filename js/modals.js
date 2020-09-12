@@ -6,6 +6,8 @@ let modalLoginWindow = document.querySelector('.login');
 
 // Show and Hide login modal window
 showLoginButton.addEventListener('click', function() {
+  event.preventDefault()
+
   modalLoginWindow.classList.add('modal-show')
   backing.classList.add('modal-show')
 });
