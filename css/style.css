@@ -246,12 +246,16 @@ h6 {
 	position: relative;
 }
 
-.nav-list__item-logo img {
+.nav-list__item-logo svg {
 	position: absolute;
 	left: 50%;
 	margin-left: -55px;
 	top: 50%;
 	margin-top: -12px;
+}
+
+.nav-list__item-logo svg path {
+	fill: #fff;
 }
 
 .nav-list__item a:hover,
