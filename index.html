@@ -156,25 +156,25 @@
                     <label class="feedback-form__label">
                         <span class="feedback-form__lable-text">Дата</span>
                         <br>
-                        <input type="text" class="feedback-form__input" placeholder="08.10.2017">
+                        <input type="text" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" class="feedback-form__input" placeholder="08.10.2017" required>
                         <br>
                     </label>
                     <label class="feedback-form__label">
                         <span class="feedback-form__lable-text">Время</span>
                         <br>
-                        <input type="text" class="feedback-form__input" placeholder="10:00">
+                        <input type="text" onfocus="(this.type='time')" onblur="if(this.value==''){this.type='text'}" class="feedback-form__input" placeholder="10:00" required>
                         <br>
                     </label>
                     <label class="feedback-form__label">
                         <span class="feedback-form__lable-text">Ваше имя</span>
                         <br>
-                        <input type="text" class="feedback-form__input" placeholder="Борода">
+                        <input type="text" class="feedback-form__input" placeholder="Борода" required>
                         <br>
                     </label>
                     <label class="feedback-form__label">
                         <span class="feedback-form__lable-text">Телефон</span>
                         <br>
-                        <input type="text" class="feedback-form__input" placeholder="+7 123 456-78-90">
+                        <input type="tel" class="feedback-form__input" placeholder="+7 123 456-78-90" maxlength="12" required>
                         <br>
                     </label>
                     <button type="submit" class="feedback-form__button button">
@@ -250,12 +250,12 @@
         <form action="#" class="login-form">
             <label>
                 <span class="visually-hidden">Логин:</span>
-                <input type="text" class="login-form__input-text login-form__input-login" placeholder="Логин">
+                <input type="text" class="login-form__input-text login-form__input-login" placeholder="Логин" required>
             </label>
             <br>
             <label>
                 <span class="visually-hidden">Пароль:</span>
-                <input type="password" class="login-form__input-text login-form__input-pass" placeholder="Пароль">
+                <input type="password" class="login-form__input-text login-form__input-pass" placeholder="Пароль" required>
             </label>
             <br>
             <div class="login-form__wrapper">
